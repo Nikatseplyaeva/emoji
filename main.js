@@ -37,7 +37,7 @@ result (allEmoji);
 
 document.querySelector('#input_id').oninput = function() {
   let value = this.value.trim();
-  newEmoji = allEmoji.filter(item => item.title.includes(value));
+  newEmoji = allEmoji.filter(item => item.keywords.includes(value));
 
   result(newEmoji);
 }
